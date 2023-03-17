@@ -1,0 +1,4 @@
+# ignore the webpack.config file
+webpack.config.js
+babel.config.js
+src/js/renderMenu.js

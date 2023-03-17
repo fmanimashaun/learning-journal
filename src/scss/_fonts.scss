@@ -1,0 +1,17 @@
+/* import fonts */
+
+/* Smythe */
+@font-face {
+  font-family: 'Smythe';
+  src: url("../fonts/Smythe/Smythe-Regular.ttf") format('TrueType');
+}
+
+/* inter */
+@font-face {
+  font-family: 'inter';
+  src: url("../fonts/Inter/Inter-VariableFont_slnt\,wght.ttf") format('TrueType');
+}
+
+$primary-ff:'Smythe', cursive;
+$secondary-ff: 'Inter', sans-serif;
+$tertiary-ff: 'Verdana', sans-serif;

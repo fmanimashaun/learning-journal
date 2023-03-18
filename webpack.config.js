@@ -1,32 +1,41 @@
 const path = require('path');
+const glob = require('glob');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+
 module.exports = {
-  mode: 'production',
-  entry: './src/js/index.js',
+  mode: 'development',
+  entry: {
+    index: './src/js/index.js',
+    about: './src/js/about.js',
+    post: './src/js/posts.js',
+  },
   devServer: {
     static: './dist',
   },
   performance: {
     maxAssetSize: 1000000,
     maxEntrypointSize: 1000000,
-    hints: 'warning',
+    hints: 'error',
   },
   plugins: [
-    new HtmlWebpackPlugin({
-      template: './src/index.html',
+    new MiniCssExtractPlugin({
+      filename: 'css/[name].css',
     }),
-    new MiniCssExtractPlugin(
-      {
-        filename: 'css/[name].css',
-      }
-    )
+    ...glob.sync('./src/*.html').map(
+      (htmlFile) =>
+        new HtmlWebpackPlugin({
+          filename: path.basename(htmlFile),
+          template: htmlFile,
+          chunks: [path.basename(htmlFile, '.html')],
+        })
+    ),
   ],
   output: {
     filename: 'js/[name].js',
     path: path.resolve(__dirname, 'dist'),
     clean: true,
-    assetModuleFilename: 'assets/[name][ext][query]'
+    assetModuleFilename: 'assets/[name][ext][query]',
   },
   optimization: {
     runtimeChunk: 'single',
@@ -41,27 +50,27 @@ module.exports = {
         test: /\.s[ac]ss$/i,
         use: [
           MiniCssExtractPlugin.loader,
-          "css-loader",
-          "sass-loader",
+          'css-loader',
+          'sass-loader',
         ],
       },
       {
         test: /\.(ico|png|svg|jpg|jpeg|gif)$/i,
         type: 'asset/resource',
         generator: {
-          filename: 'img/[name][ext][query]'
-        }
+          filename: 'img/[name][ext][query]',
+        },
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
         type: 'asset/resource',
         generator: {
-          filename: 'fonts/[name][ext][query]'
-        }
+          filename: 'fonts/[name][ext][query]',
+        },
       },
       {
         test: /\.html$/i,
-        loader: "html-loader",
+        loader: 'html-loader',
       },
     ],
   },

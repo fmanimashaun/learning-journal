@@ -1,7 +1,7 @@
 {
-  "name": "foodapp",
+  "name": "learning-journal",
   "version": "1.0.0",
-  "description": "The project was built to showcase my skills in HTML, CSS, and JavaScript by building a food ordering app based on the [Figma](https://www.figma.com/file/mJyp4LkSPFc3DUtoHBehHf/Mobile-Restaurant-Menu-(Copy)) design. This is part of the Scrimba Frontend Developer Career Path solo projects.",
+  "description": "The project was built to showcase my skills in HTML, CSS, and JavaScript by building a learning journal website based on the [Figma](https://www.figma.com/file/HX22f5YqABC0Yi8XQaE2NW/Learning-Journal%2FBlog) design. This is part of the Scrimba Frontend Developer Career Path solo projects.",
   "private": true,
   "scripts": {
     "watch": "webpack --watch",
@@ -11,15 +11,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+git+https://github.com/fmanimashaun/foodApp.git"
+    "url": "git+git+https://github.com/fmanimashaun/learning-journal.git"
   },
   "keywords": [],
   "author": "Engr. Animashaun Fisayo Michael",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/fmanimashaun/foodApp/issues"
+    "url": "https://github.com/fmanimashaun/learning-journal/issues"
   },
-  "homepage": "https://github.com/fmanimashaun/foodApp#readme",
+  "homepage": "https://github.com/fmanimashaun/learning-journal#readme",
   "devDependencies": {
     "@babel/core": "^7.20.2",
     "@babel/plugin-transform-modules-commonjs": "^7.19.6",

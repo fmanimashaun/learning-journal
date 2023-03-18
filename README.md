@@ -1,6 +1,6 @@
-# Scrimba - Food order app solution
+# Scrimba - Learning Journal Blog
 
-The project was built to showcase my skills in HTML, CSS, and JavaScript by building a food ordering app based on the [Figma](https://www.figma.com/file/mJyp4LkSPFc3DUtoHBehHf/Mobile-Restaurant-Menu-(Copy)) design. This is part of the Scrimba Frontend Developer Career Path solo projects.
+The project was built to showcase my skills in HTML, CSS, and JavaScript by building a learning journal website based on the [Figma](https://www.figma.com/file/HX22f5YqABC0Yi8XQaE2NW/Learning-Journal%2FBlog) design. This is part of the Scrimba Frontend Developer Career Path solo projects.
 
 ## Table of contents
 
@@ -37,16 +37,16 @@ Users should be able to:
 
 #### Desktop view
 
-![Desktop view](screenshots/desktop.png)
+![Desktop view](#)
 
 #### Mobile view
 
-![Mobile view](screenshots/mobile.png)
+![Mobile view](#)
 
 ### Links
 
-- [Solution URL](https://github.com/fmanimashaun/foodApp)
-- [Live Site URL](https://fmanimashaun.github.io/foodApp/)
+- [Solution URL](https://github.com/fmanimashaun/learning-journal)
+- [Live Site URL](https://fmanimashaun.github.io/learning-journal/)
 
 ## My process
 

@@ -23,14 +23,13 @@ The project was built to showcase my skills in HTML, CSS, and JavaScript by buil
 
 Users should be able to:
 
-- The menu item should be render on the page  with javascript
-- The menu item should be able to add to the cart
-- The cart should be able to remove item from the cart
-- The cart should be able to calculate the total price of the item in the cart
-- when use click on complete order, a form should be render to the user to fill in their details
-- The form should be able to validate the user input
-- The form should be able to submit the user input
-- The form should be able to show the user a success message after submitting the form
+- Build three pages from scratch
+- Make all pages responsive
+  - make use of relative units
+  - Mobile-first design
+  - Media queries
+  - viewport meta tag
+
 
 
 ### Screenshot

@@ -1,17 +1,32 @@
 /* import fonts */
 
-/* Smythe */
+/* Source Sans Pro regular*/
 @font-face {
-  font-family: 'Smythe';
-  src: url("../fonts/Smythe/Smythe-Regular.ttf") format('TrueType');
+  font-family: 'Source Sans Pro';
+  src: url("../fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf") format('TrueType');
+  font-weight: 	400;
 }
 
-/* inter */
+/* Source Sans Pro semi-bold*/
 @font-face {
-  font-family: 'inter';
-  src: url("../fonts/Inter/Inter-VariableFont_slnt\,wght.ttf") format('TrueType');
+  font-family: 'Source Sans Pro';
+  src: url("../fonts/Source_Sans_Pro/SourceSansPro-SemiBold.ttf") format('TrueType');
+  font-weight: 600;
 }
 
-$primary-ff:'Smythe', cursive;
-$secondary-ff: 'Inter', sans-serif;
-$tertiary-ff: 'Verdana', sans-serif;
+/* Source Sans Pro semi-bold*/
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url("../fonts/Source_Sans_Pro/SourceSansPro-Bold.ttf") format('TrueType');
+  font-weight: 700;
+}
+
+/* Roboto */
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Roboto/Roboto-Bold.ttf") format('TrueType');
+  font-weight: 700;
+}
+
+$primary-ff: 'Source Sans Pro', sans-serif;
+$secondary-ff: 'Roboto', sans-serif;

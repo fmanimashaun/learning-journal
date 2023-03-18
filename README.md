@@ -21,8 +21,6 @@ The project was built to showcase my skills in HTML, CSS, and JavaScript by buil
 
 ### The challenge
 
-Users should be able to:
-
 - Build three pages from scratch
 - Make all pages responsive
   - make use of relative units
@@ -83,5 +81,9 @@ I will still want to focus on reinforcing my understanding of various layout imp
 - [Blog](https://blog.fmanimashaun.com)
 
 ## Acknowledgments
+
+- [Scrimba](https://scrimba.com/)
+- [Microverse](https://www.microverse.org/?grsf=a72hqa)
+- [Freecodecamp](https://www.freecodecamp.org/)
 
 ------
